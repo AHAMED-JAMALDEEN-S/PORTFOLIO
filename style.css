@@ -1,1 +1,51 @@
+/* gold (#FFD700), purple (#800080), red (#FF0000), tan (#D2B48C), blue (#0000FF) */
+/* Body Style */
+html, body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column ;
+}
 
+main{
+    flex:1;
+}
+/* Body Style */
+
+/* Header/Footer Style */
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+} 
+
+.navbar .logo{
+   padding: 0;
+}
+
+.nav-links{
+    display: flex;
+    flex:1;
+    justify-content: space-evenly;
+}
+
+.navbar a{
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.navbar img{
+    height: 50px;
+}
+
+/* Header/Footer Style */
+
+/* gold (#FFD700), purple (#800080), red (#FF0000), tan (#D2B48C), blue (#0000FF) */
+
+/* Body Content Style */
+.content{
+    color: #000000;
+}
+/* Body Content Style */

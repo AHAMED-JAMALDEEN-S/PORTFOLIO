@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <div class="navbar">
-            <a class="logo" href="/"><img src="images/J.png" alt="Jamal"></a>
+            
             <div class="nav-links">
-                <a href="about-me.html">About Me</a>
-                <a href="work-experience.html">Work Experience</a>
-                <a href="personal-projects.html">Personal Projects</a>
-                <a href="hands-on-skill.html">Hands-On Skills</a>
-                <a href="education-details.html">Education Details</a>
+                <a class="logo" href="/"><img src="images/J.png" alt="Jamal"></a>
+                <a class="about-me" onclick="loadPage('pages/about-me.html','About Me')">About Me</a>
+                <a class="work-experience" onclick="loadPage('pages/work-experience.html','Work Experience')">Work Experience</a>
+                <a class="personal-projects" onclick="loadPage('pages/personal-projects.html','Personal Projects')">Personal Projects</a>
+                <a class="hands-on-skill" onclick="loadPage('pages/hands-on-skill.html','Hands-On Skills')">Hands-On Skills</a>
+                <a class="education-details" onclick="loadPage('pages/education-details.html','Education Details')">Education Details</a>
             </div> 
         </div>
     </header>
@@ -34,16 +35,18 @@
     
      <footer>
         <div class="navbar">
-            <a class="logo" href="/"><img src="images/Jamal.png" alt="Jamal"></a>
+            
             <div class="nav-links">
-                <a href="mailto:ahamedjamaldeens@gmail.com">Email</a>
-                <a href="tel:+917010286793">Phone Number</a>
-                <span class="copyright">&copy; 2026 Jamal. All rights reserved.</span>
-                <a href="https://www.linkedin.com/in/ahamed-jamaldeen-s/">LinkedIn</a>
-                <a href="https://github.com/AHAMED-JAMALDEEN-S">GitHub</a>
+                <a class="logo" href="/"><img src="images/Jamal.png" alt="Jamal"></a>
+                <a class="email" href="mailto:ahamedjamaldeens@gmail.com">Email</a>
+                <a class="phone-number" href="tel:+917010286793">Phone Number</a>
+                <a class="copyright" href="https://en.wikipedia.org/wiki/Copyright">&copy; 2026 Jamal</a>
+                <a class="linkedin" href="https://www.linkedin.com/in/ahamed-jamaldeen-s/">LinkedIn</a>
+                <a class="github" href="https://github.com/AHAMED-JAMALDEEN-S">GitHub</a>
             </div>
         </div>
      </footer>
     
+     <script src="script.js"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@
 html, body{
     height: 100%;
     margin: 0;
+    background-color: #000000;
 }
 body{
     display: flex;
@@ -33,11 +34,49 @@ main{
 
 .navbar a{
     text-decoration: none;
-    padding: 10px 0;
+    font-weight: bold;
+    color: gray;
 }
 
 .navbar img{
     height: 50px;
+}
+
+.nav-links a{
+    flex: 1;                 /* each link gets equal width */
+    text-align: center;      /* center text inside */
+    display: block;          /* full clickable area */
+    padding: 12px 0;         /* vertical click space */
+}
+
+.nav-links a.about-me:hover, .nav-links a.email:hover{
+    font-weight: bolder;
+    color: gray;
+    background-color: #FFD700;
+}
+
+.nav-links a.work-experience:hover, .nav-links a.phone-number:hover{
+    font-weight: bolder;
+    color: gray;
+    background-color: #800080;
+}
+
+.nav-links a.personal-projects:hover, .nav-links a.copyright:hover{
+    font-weight: bolder;
+    color: gray;
+    background-color: #FF0000;
+}
+
+.nav-links a.hands-on-skill:hover, .nav-links a.linkedin:hover{
+    font-weight: bolder;
+    color: gray;
+    background-color: #D2B48C;
+}
+
+.nav-links a.education-details:hover, .nav-links a.github:hover{
+    font-weight: bolder;
+    color: gray;
+    background-color: #0000FF;
 }
 
 /* Header/Footer Style */
@@ -46,6 +85,8 @@ main{
 
 /* Body Content Style */
 .content{
-    color: #000000;
+    color: gray;
 }
 /* Body Content Style */
+
+

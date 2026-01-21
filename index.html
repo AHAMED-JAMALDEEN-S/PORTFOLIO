@@ -10,6 +10,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
     <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -18,11 +22,11 @@
             
             <div class="nav-links">
                 <a class="logo" href="/"><img src="images/J.png" alt="Jamal"></a>
-                <a class="about-me" onclick="loadPage('pages/about-me.html','About Me')">About Me</a>
-                <a class="work-experience" onclick="loadPage('pages/work-experience.html','Work Experience')">Work Experience</a>
-                <a class="personal-projects" onclick="loadPage('pages/personal-projects.html','Personal Projects')">Personal Projects</a>
-                <a class="hands-on-skill" onclick="loadPage('pages/hands-on-skill.html','Hands-On Skills')">Hands-On Skills</a>
-                <a class="education-details" onclick="loadPage('pages/education-details.html','Education Details')">Education Details</a>
+                <a class="about-me" onclick="loadPage('pages/about-me.html','Story',this)">Story</a>
+                <a class="work-experience" onclick="loadPage('pages/work-experience.html','Experience',this)">Experience</a>
+                <a class="personal-projects" onclick="loadPage('pages/personal-projects.html','Projects',this)">Projects</a>
+                <a class="hands-on-skill" onclick="loadPage('pages/hands-on-skill.html','Skills',this)">Skills</a>
+                <a class="education-details" onclick="loadPage('pages/education-details.html','Education',this)">Education</a>
             </div> 
         </div>
     </header>
@@ -38,13 +42,23 @@
             
             <div class="nav-links">
                 <a class="logo" href="/"><img src="images/Jamal.png" alt="Jamal"></a>
-                <a class="email" href="mailto:ahamedjamaldeens@gmail.com">Email</a>
-                <a class="phone-number" href="tel:+917010286793">Phone Number</a>
-                <a class="copyright" href="https://en.wikipedia.org/wiki/Copyright">&copy; 2026 Jamal</a>
-                <a class="linkedin" href="https://www.linkedin.com/in/ahamed-jamaldeen-s/">LinkedIn</a>
-                <a class="github" href="https://github.com/AHAMED-JAMALDEEN-S">GitHub</a>
+                <a class="email" href="mailto:ahamedjamaldeens@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a class="phone-number" href="tel:+917010286793" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+                <a class="copyright" href="https://en.wikipedia.org/wiki/Copyright" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-copyright"> 2026 Jamal </i> 
+                </a>
+                <a class="linkedin" href="https://www.linkedin.com/in/ahamed-jamaldeen-s/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a class="github" href="https://github.com/AHAMED-JAMALDEEN-S" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
-        </div>
+        </div> 
      </footer>
     
      <script src="script.js"></script>

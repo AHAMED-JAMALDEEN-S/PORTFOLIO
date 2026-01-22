@@ -9,7 +9,7 @@ html, body{
 body{
     display: flex;
     flex-direction: column ;
-    padding: 25px;
+    /* padding: 25px; */
     box-sizing: border-box;
 }
 
@@ -19,13 +19,23 @@ main{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
+     padding: 25px;
 }
 
-header, footer{
+header{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     line-height: 1.6;
     font-weight: 400;
+    padding: 0 25px 0 25px;
+}
+
+footer{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+    padding: 0 25px 0 25px;
 }
 /* Body Style */
 
@@ -53,7 +63,7 @@ header, footer{
 }
 
 .navbar img{
-    height: 50px;
+    height: 66px;
 }
 
 .nav-links a{
@@ -64,39 +74,66 @@ header, footer{
     cursor: pointer;       
 }
 
-.nav-links a.about-me:hover, .nav-links a.about-me.active{
+.nav-links a.about-me:hover{
     font-weight: 600;
     color: #FFD700;
     background-color: #2C2C2C;
 }
 
-.nav-links a.work-experience:hover, .nav-links a.work-experience.active{
+.nav-links a.work-experience:hover{
     font-weight: 600;
     color: #800080;
     background-color: #2C2C2C;
 }
 
-.nav-links a.personal-projects:hover, .nav-links a.personal-projects.active{
+.nav-links a.personal-projects:hover{
     font-weight: 600;
     color: #FF0000;
     background-color: #2C2C2C;
 }
 
-.nav-links a.hands-on-skill:hover, .nav-links a.hands-on-skill.active{
+.nav-links a.hands-on-skill:hover{
     font-weight: 600;
     color: #D2B48C;
     background-color: #2C2C2C;
 }
 
-.nav-links a.education-details:hover, .nav-links a.education-details.active{
+.nav-links a.education-details:hover{
     font-weight: 600;
     color: #0000FF;
     background-color: #2C2C2C;
 }
 
-.nav-links a.email:hover, .nav-links a.phone-number:hover, .nav-links a.copyright:hover, 
-.nav-links a.linkedin:hover, .nav-links a.github:hover{
-    font-weight: 600;
+.nav-links a.about-me.active{
+    font-weight: 800;
+    color: #FFD700;
+}
+
+.nav-links a.work-experience.active{
+    font-weight: 800;
+    color: #800080;
+}
+
+.nav-links a.personal-projects.active{
+    font-weight: 800;
+    color: #FF0000;
+}
+
+.nav-links a.hands-on-skill.active{
+    font-weight: 800;
+    color: #D2B48C;
+}
+
+.nav-links a.education-details.active{
+    font-weight: 800;
+    color: #0000FF;
+}
+
+
+
+.nav-links a.logo:hover, .nav-links a.location:hover, .nav-links a.email:hover, .nav-links a.phone-number:hover, 
+.nav-links a.copyright:hover, .nav-links a.linkedin:hover, .nav-links a.github:hover{
+
     background-color: #2C2C2C;
 }
 /* Header/Footer Style */
@@ -106,6 +143,26 @@ header, footer{
 /* Body Content Style */
 .content{
     color: white;
+}
+
+.headlines p{
+    font-size: 50px;
+}
+
+.j{
+    color: #FFD700;
+}
+.a1{
+    color: #800080;
+}
+.m{
+    color: #FF0000;
+}
+.a2{
+    color: #D2B48C;
+}
+.l{
+    color: #0000FF;
 }
 /* Body Content Style */
 

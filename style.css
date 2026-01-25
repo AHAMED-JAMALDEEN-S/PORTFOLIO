@@ -38,6 +38,9 @@ footer{
     padding: 0 25px 0 25px;
 }
 /* Body Style */
+.nav-links a.menu {
+  display: none;
+}
 
 @media only screen and (max-width: 768px) {
   header .navbar {
@@ -48,9 +51,29 @@ footer{
   header .nav-links {
     flex-direction: column;    
   }
+
+  header .nav-links a:not(.logo):not(.menu) {
+    display: none;
+  }
+
+  header .nav-links a.menu {
+    display: flex;              /* makes it visible */
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;            /* touch-friendly */
+    height: 44px;
+    cursor: pointer;
+  }
+  
+  header .nav-links.show a:not(.logo):not(.menu) {
+    display: block;
+  }
+
 }
 
-
+.navbar .nav-links{
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
 /* Header/Footer Style */
 .navbar{
     display: flex; 
@@ -85,12 +108,6 @@ footer{
     padding: 12px 0;         
     cursor: pointer;       
 }
-
-.nav-links.menu{
-    visibility: hidden;
-}
-
-
 
 .nav-links a.about-me:hover{
     font-weight: 600;

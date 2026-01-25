@@ -12,6 +12,20 @@ function loadPage(page, title, activeLink) {
       });
       
       activeLink.classList.add('active');
+
+      const navLinks = document.querySelector('.nav-links');
+      const menuIcon = document.querySelector('.menu i');
+
+      navLinks.classList.remove('show');
+
+      if (menuIcon) {
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+      }
+      else{
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-xmark');
+      }
     })
     .catch(error => {
       document.getElementsByClassName("content")[0].innerHTML =

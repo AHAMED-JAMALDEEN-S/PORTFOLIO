@@ -47,3 +47,5 @@ function toggleMenu() {
     menuIcon.classList.add('fa-bars');
   }
 }
+
+

@@ -2,7 +2,12 @@ function loadPage(page, title, activeLink) {
   fetch(page)
     .then(response => response.text())
     .then(data => {
-      document.getElementsByClassName("content")[0].innerHTML = data;
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(data, 'text/html');
+
+
+      document.getElementsByClassName("image")[0].innerHTML = doc.querySelector('.proof').innerHTML;
+      document.getElementsByClassName("content")[0].innerHTML = doc.querySelector('.details').innerHTML;
     
       document.title = title;
       
@@ -48,4 +53,20 @@ function toggleMenu() {
   }
 }
 
+const slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
